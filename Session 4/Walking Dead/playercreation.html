@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Dead Survival Game</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:#c38c00
+        }
+        label {
+            display: block;
+            margin: auto;
+        }
+        input {
+        margin: 5px 0 0 0;
+        width: 100%;
+        min-height: 2em;
+        }
+        input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        border-color: white;
+        min-width: 300px;
+        }
+        fieldset {
+        border: none;
+        padding: 2rem 0;
+        
+        }
+        form {
+        width: 60vw;
+        max-width: 500px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        }
+        
+    </style>
+</head>
+<body style="background-color:#0f0303;">
+    <header style="width: 100%;
+    height: 100%;
+    background-color: #230a0a;">
+            <img style="width: max(100px, 18vw);
+            background-color: #230a0a;
+            aspect-ratio: auto; display: block;
+  margin-left: auto;
+  margin-right: auto;" id="logo" src="https://upload.wikimedia.org/wikipedia/en/9/94/The_walking_dead_telltale_game_series_logo.png" width="100px";>    
+    </header>
+    <h1 style="color: #c38c00;
+            font-size: min(5vw, 1.2em);
+            text-align: center;">Walking Dead Survival </h1>
+            <p style="color: #c38c00; text-align: center;">Create your player</p>
+            <form action='chapter1-1.html'>
+                <fieldset>
+                  <label for="first-name">First Name <input id="first-name" name="first-name" type="text" required /></label><br/>
+                  <label for="last-name">Last Name <input id="last-name" name="last-name" type="text" required /></label><br/>
+                  <label for="email">Email address <input id="email" name="email" type="email" required /></label><br/>
+                  <label for="new-password">Password <input id="new-password" name="new-password" type="password" required /></label><br/>
+                  <input type="submit" value="Submit" />
+                </fieldset>
+               
+    
+</body>
+</html>

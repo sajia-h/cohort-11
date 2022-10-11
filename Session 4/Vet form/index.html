@@ -38,6 +38,48 @@ header {
     margin-bottom: 30px;
 }
 
+form{
+    display: block;
+    
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    color: #555;
+    background-color: #fbfcfc;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+select, label{
+    display: inline-block;
+    font-size: large;
+    
+}
+
+button {
+    display: inline-block;
+    padding: 10px 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ea398b;
+    border-radius: 3px;
+    color: #fff;
+    transition: background-color ease 200ms,color ease 200ms;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
     </style>
 </head>
 <body>
@@ -58,53 +100,27 @@ header {
             </p>
         </section>
         <section class="signup">
-            <form id="mypdsa-registration-form" class="mypdsa-form pdsa validate" method="post" action="btncomp" autocomplete="off" novalidate="novalidate">
-                <fieldset>
+            <form action=""><h2><span style="text-align: right;">Your Details</span></h2>
+              
+                    <select class="form-control" data-display-name="Title" id="UserDetails_Title" name="UserDetails.Title" required="required"><option value="">Please Select</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Ind">Ind</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Mx">Mx</option>
+                        </select> <br/>
                     <label for="first-name">First Name <input id="first-name" name="first-name" type="text" required /></label><br/>
                     <label for="last-name">Last Name <input id="last-name" name="last-name" type="text" required /></label><br/>
                     <label for="email">Email address <input id="email" name="email" type="email" required /></label><br/>
                     <label for="new-password">Password <input id="new-password" name="new-password" type="password" required /></label><br/>
-                    <div class="flexible-section mt-8 no-padding">
-                        <h1 class="pdsa-primary mb-4">Your details</h1>
-                        <div class="flexible-container fifty-percent">
-                            <div class="form-group">
-                                <label for="UserDetails.Title">Title<mark></mark></label>
-                                <select class="form-control" data-display-name="Title" id="UserDetails_Title" name="UserDetails.Title" required="required"><option value="">Please Select</option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs">Mrs</option>
-                                    <option value="Miss">Miss</option>
-                                                        <option value="Ms">Ms</option>
-                                                        <option value="Dr">Dr</option>
-                                                        <option value="Ind">Ind</option>
-                                                        <option value="Misc">Misc</option>
-                                                        <option value="Mx">Mx</option>
-                                                    </select>
-                                                        
-                                                    </div>
-                                                    <div class="form-item">
-                                                        <div class="form-group">
-
-                                                            <label for="UserDetails.Forename">Forename<mark></mark></label>
-                                                            <input class="form-control" data-display-name="Forename(s)" id="UserDetails_Forename" maxlength="40" name="UserDetails.Forename" required="required" type="text" value="">
-                                                            
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-item">
-                                                        <div class="form-group no-bottom-margin">
-
-                                                            <label for="UserDetails.Surname">Surname<mark></mark></label>
-                                                            <input class="form-control" data-display-name="Surname" id="UserDetails_Surname" maxlength="30" name="UserDetails.Surname" required="required" type="text" value="">
-                                                            
-                                                        </div>
-                                                        <div class="col-md-12 u-padding-0">
-                                                            <button type="submit" class="btncomp" data-mh="register">Complete registration&nbsp;<i class="icon-fa icon-fa-check"></i></button>
-                                                        </div>
-                                                    </div>
-
-                                                    </fieldset>
-<fieldset>
-                    
-                </fieldset>
+                    <div class="col-md-12 u-padding-0">
+                        <button type="submit" class="complete">Complete registration</button>
+                    </div>
+                    <!-- <input type="submit" value="Submit" /> -->
+                
             </form>
         </section>
 </body>

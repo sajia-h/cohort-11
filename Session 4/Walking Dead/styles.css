@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#c38c00;
+    max-width:600px;
+    border: solid 2px white;
+    margin: 0 auto;
+}
+
+body header{
+    text-align: center;
+}
+section {
+    text-align: center;
+}
+.chap1 > p{
+    color:rgb(216, 216, 216);
+}
+.chap1-a > p{
+    color:rgb(216, 216, 216);
+    text-align: auto;
+}
+input[type="submit"] {
+display: block;
+width: 60%;
+margin: 1em auto;
+height: 2em;
+font-size: 1.1rem;
+font-style: bold;
+background-color: #000002;
+border-color: rgb(233, 223, 223);
+min-width: 300px;
+}
+
+.choices p:hover {
+    background-color: red;
+}

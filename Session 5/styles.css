@@ -1,0 +1,27 @@
+body {
+    font-family:arial;
+    text-align: center;
+    border: solid palegoldenrod 25px;
+    color:rgb(125, 207, 160);
+    text-shadow: rgb(0, 0, 0) 10px;
+    /* background-image:linear-gradient(to bottom, #f9ae97, hsl(41, 100%, 67%)) */
+}
+
+img {
+    width: 30%;
+}
+
+.tasks {
+    list-style-position: inside;
+}
+
+a {
+    color:rgb(230, 139, 73);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: rgb(255, 249, 185);
+}

@@ -1,0 +1,127 @@
+
+:root{
+    --background-canvas:rgb(252, 205, 212);
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+    
+    
+}
+
+
+body {
+    background: #000;
+/* background: radial-gradient(#3A2B32 0%, #72484C 35%, #AF5B59 55%, #3F1C16 100%); */
+color:#fff;
+font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+header {
+    background-image: url(banner.jpg);
+    max-width: 100%;
+    height: 80vh;
+    background-position: center;
+    
+}
+
+.hogwarts {
+    padding-top:25vh;
+    text-align: center;
+    font-size:300%;
+    text-shadow: 2px 2px 8px #000;
+}
+
+ul :hover{
+    background-color: antiquewhite;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar > ul {
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navbar > ul > li {
+    margin: 0 0.2rem;
+    margin-top: 5px;
+    padding: 0.2rem;
+    display: block;
+    
+  }
+  
+  #title {
+    text-align: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+
+}
+
+  .container {
+    width:80%;
+    margin:auto;
+    margin-bottom:20px;
+  }
+
+  .horntail, .fighting, .nature {
+        float: left;
+        width: 45%;
+        padding-left: 15px;
+        padding-bottom: 15px;
+  }
+
+  .fighting {
+    padding-top: 35px;
+  }
+  
+  
+.willow, .danger, .fight {
+        float: right;
+        width: 45%;
+        padding-left: 15px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    clear: both;
+}
+
+section h3 {
+    margin: 35px 0 0 5px;
+    
+    
+}
+
+section p {
+    padding: 5px;
+    
+}
+
+#testimonials {
+    text-align: center;
+    padding-top: 90px;
+}
+#testimonials p {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+

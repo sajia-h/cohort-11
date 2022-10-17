@@ -1,0 +1,55 @@
+body {
+    background-color: palegoldenrod;
+    
+    
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 250vh;
+    row-gap: 3px;
+    column-gap: 3px;
+    flex-flow: row wrap;
+    overflow:hidden
+    
+    
+  }
+
+  
+  .box1, .box2, .box3, .box4, .box5 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .box1{
+    background-color: pink;
+    justify-items: flex-start;
+    
+    
+    
+  }
+
+  .box2{
+    background-color: powderblue;
+    align-self: flex-end;
+    
+    
+  }
+  .box3{
+    background-color: lightgreen;
+    align-self: center;
+    justify-self: flex-end;
+ 
+  }
+  .box4{
+    background-color: peachpuff;
+    align-self: flex-start;
+    
+    
+  }
+  .box5{
+    background-color: lavender;
+    align-self: flex-end;
+    justify-self: flex-end;
+    
+  }

@@ -1,3 +1,16 @@
+@import url(//db.onlinewebfonts.com/c/c7bb826066d26f25a1c74eb769777615?family=Decker);
+@import url(//db.onlinewebfonts.com/c/11b8753a0075a59a8d93e0d3b5669833?family=Decker);
+@import url(//db.onlinewebfonts.com/c/4a09b45d226ba5cda5f34e5814f72fc8?family=AvantGreek);
+@font-face {font-family: "Decker"; src: url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.eot"); src: url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.woff") format("woff"), url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c7bb826066d26f25a1c74eb769777615.svg#Decker") format("svg"); 
+    font-family: "Deckerb"; src: url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.eot"); src: url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.woff") format("woff"), url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/11b8753a0075a59a8d93e0d3b5669833.svg#Decker") format("svg");; 
+}
+
+
+
+:root{
+    --gradient-color:linear-gradient(45deg, #D6B6FF 0%, #FFA9CE 50%, #FF67DB 100%); 
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +19,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("background.png");
-   
+    /* background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center; */
+    overflow-x :hidden;
 }
 
 /* designs fill screen */
@@ -29,17 +45,18 @@ input,
 button,
 select,
 textarea {
-    font: 600 1rem Poppins, sans-serif;
+    font: 600 1rem 'Decker', sans-serif;
     color:rgb(110, 110, 110);
+    /* font-family: 'Decker'; */
 }
 
 /* remove default text decor and set theme for a: pseudo class */
 a {
-    text-decoration: none;
+    text-decoration: none ;
 }
 
 a:link {
-    color:#6A26CD;
+    color:inherit;
 }
 a:hover {
     color:#431488;
@@ -63,14 +80,13 @@ a:visited {
     width: 100%;  
     height: 80px;
     
+    
 }
 
 #logo {
     display: inline-block;
     vertical-align: top;
     margin-right: 2rem;
-   
-  
 }
 
 #cart {
@@ -79,6 +95,12 @@ a:visited {
     height:30px;
     margin-top: 19.5px;
 
+}
+
+#cart:hover{
+    transform: scale(1.5); 
+  transition: 1000ms ease-out;
+    cursor: pointer;
 }
 
 .navbar > ul {
@@ -95,6 +117,44 @@ a:visited {
     padding: 2rem;
     display: inline;
   }
+
+  .navbar a {
+    background:
+    linear-gradient(
+      to right,
+      #fff,
+      #fff
+    ),
+    linear-gradient(
+      to right,
+      #D6B6FF,
+      #FFA9CE,
+      #FF67DB
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+  
+
+  .navbar a:hover{
+    /* background: linear-gradient(45deg, #d6b6ffa3 0%, #ffa9cec0 50%, #ff67dca0 100%); */
+    background-size: 0 3px, 100% 3px;
+    
+  }
+
+  .navbar a:link{
+    color:inherit;
+  }
+
+  .navbar a:active {
+    color:inherit;
+}
+
+.navbar a:visited {
+    color:inherit;
+}
 
   .icon-bar {
     position: fixed;
@@ -114,7 +174,81 @@ a:visited {
   }
   
   .icon-bar a:hover {
-    background-color: #000;
+    background-color: pink;
   }
-  
-  
+
+
+  .main {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    margin:6em 15em 10em;
+    
+  }
+
+  .content p:first-of-type {
+    position: relative;
+    text-shadow: solid 2px black;
+    color:rgba(28, 28, 28, 0.943);
+    font-family: 'Deckerb', Arial, Helvetica, sans-serif;
+    margin-bottom:2rem;
+  }
+
+
+  .girl-bg{
+    position:absolute;
+    bottom: 0%; /* your required value */
+    right: 0;
+    width: 30rem;
+    position: fixed;
+    z-index: -1;
+    
+}
+
+
+.btn1{
+    background-image: url("back-arrow.png");
+    background-color: transparent;
+    background-size: cover;
+    
+    /* background-image: linear-gradient(45deg, #D6B6FF 0%, #FFA9CE 50%, #FF67DB 100%); */
+    border-radius: 100px;
+    text-align: center;
+    border: 2px solid #000a;
+    
+    
+}
+
+.btn2{
+    background-image: url("next-arrow.png");
+    background-size: cover;
+    border-radius: 100px;
+    text-align: center;
+    border: 1px solid #000a;
+    
+}
+
+.buttons button {
+    width:29px;
+    height:29px;
+    margin:1.8rem;
+}
+
+.buttons button:hover {
+    transform: scale(1.2); 
+  transition: 1000ms ease-out;
+  cursor:pointer;
+    border: 2px solid pink;
+}
+
+.myButton {
+    
+    color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 9px; border-radius: 11px; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background: #D6B6FF;
+    background: -moz-linear-gradient(45deg, #D6B6FF 0%, #FFA9CE 50%, #FF67DB 100%);
+    background: -webkit-linear-gradient(45deg, #D6B6FF 0%, #FFA9CE 50%, #FF67DB 100%);
+    background: linear-gradient(45deg, #D6B6FF 0%, #FFA9CE 50%, #FF67DB 100%); box-shadow: rgba(119, 119, 119, 0.502) 2px 2px 5px 1px; border: 0px rgb(28, 110, 164); display: inline-block;}
+    .myButton:hover {
+    background: #D6B6FF; }
+    /* color:#000a;} */
+    .myButton:active {
+    background: #144E75; }

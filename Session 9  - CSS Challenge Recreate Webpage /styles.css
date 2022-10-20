@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+   
+}
+
+/* designs fill screen */
+html,
+body, 
+    #root {
+        height:100%;
+    }
+
+/* perfectly spaced lists */
+ul, ol {
+    margin: 0 0 1rem;
+    padding: 0 0 0 1rem;
+}
+
+
+/* consistent fonts across UI */
+body,
+input,
+button,
+select,
+textarea {
+    font: 600 1rem Poppins, sans-serif;
+    color:rgb(110, 110, 110);
+}
+
+/* remove default text decor and set theme for a: pseudo class */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:#6A26CD;
+}
+a:hover {
+    color:#431488;
+}
+a:active {
+    color:#6A26CD;
+}
+a:visited {
+    color:#6A26CD;
+}
+
+.navcontainer {
+  height: 70px;
+  width: 100%;
+  margin:3rem;
+  display:flex;
+  overflow: hidden;
+}
+
+.navbar{
+    width: 100%;  
+    height: 80px;
+    
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2rem;
+   
+  
+}
+
+#cart {
+    margin-right: 4rem;
+    width:30px;
+    height:30px;
+    margin-top: 19.5px;
+
+}
+
+.navbar > ul {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;
+    
+}
+
+.navbar > ul > li {
+    margin: 0 0.2rem;
+    margin-top: 5px;
+    padding: 2rem;
+    display: inline;
+  }
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: #000a;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  

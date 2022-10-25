@@ -13,13 +13,34 @@ function validateNum() {
   }
 }
 
-function addFunction() {
+function addOp() {
   let a = document.getElementById("num1").value;
   let b = document.getElementById("num2").value;
   // If x is Not a Number or less than one or greater than 10
   let text = +a + +b;
   document.getElementById("demo").innerHTML = text;
 }
+function subOp() {
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    // If x is Not a Number or less than one or greater than 10
+    let text = +a - +b;
+    document.getElementById("demo").innerHTML = text;
+  }
+  function multOp() {
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    // If x is Not a Number or less than one or greater than 10
+    let text = +a * +b;
+    document.getElementById("demo").innerHTML = text;
+  }
+  function divOp() {
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+    // If x is Not a Number or less than one or greater than 10
+    let text = a / b;
+    document.getElementById("demo").innerHTML = text;
+  }
 
 let button = document.getElementById("addItem");
 let text = document.getElementById("addToList");

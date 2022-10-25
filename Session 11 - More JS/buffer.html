@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>JavaScript Intro</title>
+  </head>
+  <body>
+    <p id="intro">Hello, hello</p>
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn on the light
+    </button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width: 100px" />
+
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+      Turn off the light
+    </button> -->
+
+    <!-- Better way with function -->
+
+    <button onclick="turnOn()" id="lighton">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" alt="bulb off" />
+    <button onclick="turnOff()">Turn off the light</button>
+    <button class="helpbtn" onclick="help()">Help</button>
+
+    <!-- Can use external files to write JS code-->
+    <script src="script1.js"></script>
+
+    <!-- Recommended to put script at end of body-->
+    <script>
+        function help() {
+            window.alert("Switch between the on and off button to see the bulb work its magic.");
+      }
+      function turnOn() {
+        document.getElementById("myImage").src = "pic_bulbon.gif";
+      }
+      function turnOff() {
+        document.getElementById("myImage").src = "pic_bulboff.gif";
+      }
+
+    //   console.log(5 + 9);
+
+    </script>
+  </body>
+</html>

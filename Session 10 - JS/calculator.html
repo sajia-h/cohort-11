@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Index Calculator</title>
+    <link rel="stylesheet" href="styles3.css">
+    
+</head>
+<body>
+    <h2>HEAT INDEX CALCULATOR</h2>
+<p>
+    The Heat Index is a measure of how hot it really feels when relative humidity is factored in with the actual air temperature. This measure can also help to perceive the possible effects on the body at varying levels of heat index. Though it has been tested, there are no guarantees regarding the accuracy of the calculations.</p>
+
+
+<p>
+            <label>Celsius (°C)</label>
+            <input id="inputCel" type="number" placeholder="Celsius"/>
+            <!-- oninput="heatindex()"
+            onchange="heatindex()" -->
+             
+            <label>Humidity (%)</label>
+            <input id="inputHum" type="number" placeholder="Humidity"/>
+            <!-- oninput="heatindex()"
+            onchange="heatindex()"  -->
+            <label>
+                <button type="submit" name="calc" onclick="heatIndex()">Calculate</button>
+            </label>
+          </p>
+          <p>Heat Index: <span id="outputCelsius"></span></p>
+    </main>
+
+    
+</div>
+<script src="script3.js"></script>
+    
+</body>
+</html>

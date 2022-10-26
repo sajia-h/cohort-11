@@ -9,14 +9,16 @@
     
 </head>
 <body>
+    <div class="container">
+        <main>
     <h2>HEAT INDEX CALCULATOR</h2>
-<p>
-    The Heat Index is a measure of how hot it really feels when relative humidity is factored in with the actual air temperature. This measure can also help to perceive the possible effects on the body at varying levels of heat index. Though it has been tested, there are no guarantees regarding the accuracy of the calculations.</p>
+<p class="description">
+    The Heat Index is a measure of how hot it really feels when relative humidity is factored in with the actual air temperature. <br /> This measure can also help to perceive the possible effects on the body at varying levels of heat index. <br/> Though it has been tested, there are no guarantees regarding the accuracy of the calculations.</p>
 
-
+<div class="calculator">
 <p>
-            <label>Celsius (°C)</label>
-            <input id="inputCel" type="number" placeholder="Celsius"/>
+            <label>Celcius(°C)</label>
+            <input id="inputCel" type="number" placeholder="Above 20°C"/>
             <!-- oninput="heatindex()"
             onchange="heatindex()" -->
              
@@ -25,13 +27,15 @@
             <!-- oninput="heatindex()"
             onchange="heatindex()"  -->
             <label>
-                <button type="submit" name="calc" onclick="heatIndex()">Calculate</button>
+                <button type="submit" name="calc" onclick="heatindex()">Calculate</button>
             </label>
           </p>
-          <p>Heat Index: <span id="outputCelsius"></span></p>
+          <fieldset>
+          <p>Heat Index: <span id="outputCelcius"></span></p>
+        </fieldset>
+        </div>
     </main>
 
-    
 </div>
 <script src="script3.js"></script>
     

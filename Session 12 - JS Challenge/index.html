@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="http://fonts.cdnfonts.com/css/dimitri" rel="stylesheet" />
+    
+    <title>JavaScript Challenge</title>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <section class="sect">
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="box">
+        <span>T</span>
+        <span>W</span>
+        <span>I</span>
+        <span>I</span>
+        <span>T</span>
+        <span>C</span>
+        <span>H</span>
+      </div>
+      <h2 class="title">Simulator</h2>
+      <div class="para">
+        <!-- <h2>Welcome!</h2>
+        <p>Are you ready to become the #1 streamer in the world?</p> -->
+      </div>
+      <section data-page="home" id="home" class="active">
+        <!-- <h1>Welcome!</h1> -->
+        <p class="ready">Are you ready to become the #1 streamer in the world?</p>
+        <button id="start" type="button" onclick="startGame()">LET'S GO!</button>
+        <p><a href="#other" data-role="link">This is lame...</a></p>
+    </section>
+    <section data-page="other" id="other">
+        <h1>Sorry you feel that way</h1>
+        <p class="nogrow">But just before you go... <br/> The top Twitch streamers earn anywhere between $2-10 million.</p>
+        <p><a href="#home" data-role="link">I change my mind, take me back!</a></p>
+    </section>
+</section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

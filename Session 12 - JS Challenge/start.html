@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gamestyles.css" />
+    <link href="http://fonts.cdnfonts.com/css/dimitri" rel="stylesheet" />
+
+    <title>Twitch Simulator</title>
+  </head>
+  <body class="animate-in">
+    <div class="title">Create</div>
+    <div class="center">
+      <h1>Create your profile</h1>
+      <input
+        type="text"
+        name="username"
+        id="usernameInp"
+        class="login"
+        placeholder="Username"
+        method="GET"
+      />
+      <input id="btn" type="submit" value="Submit" onclick="displayName()" />
+    </div>
+
+    <section>
+      <p><span id="display"></span></p>
+      <div id="mascot">
+        <h2>Pick your mascot</h2>
+      </div>
+      <div class="container" id="hidden">
+        <div class="card" onclick="userPage()">
+          <div class="content">
+            <div class="imgBx">
+              <img src="imgs/monkey.png" alt="Monkey" />
+            </div>
+            <div class="contentBx">
+              <h3>Monkey<br /><span>The cheeky one</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a id="monkey" href="#" onclick="userPage()">Pick me</a>
+            </li>
+            <!-- <li>
+						<a href="">birth</a>
+					</li>
+					<li>
+						<a href="">day</a>
+					</li> -->
+          </ul>
+        </div>
+        <div class="card" onclick="userPage()">
+          <div class="content">
+            <div class="imgBx">
+              <img src="imgs/tiger.png" alt="Tiger" />
+            </div>
+            <div class="contentBx">
+              <h3>Tiger<br /><span>The crazy one</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a id="tiger" href="#" onclick="userPage()">Pick me</a>
+            </li>
+            <!-- <li>
+						<a href="">birth</a>
+					</li>
+					<li>
+						<a href="">day</a>
+					</li> -->
+          </ul>
+        </div>
+        <div class="card" onclick="userPage()">
+          <div class="content">
+            <div class="imgBx">
+              <img src="imgs/unicorn.png" alt="Unicorn" />
+            </div>
+            <div class="contentBx">
+              <h3>Unicorn<br /><span>The charming one</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a id="unicorn" href="#" onclick="userPage()">Pick me</a>
+            </li>
+            <!-- <li>
+						<a href="">birth</a>
+					</li>
+					<li>
+						<a href="">day</a>
+					</li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

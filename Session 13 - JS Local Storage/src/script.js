@@ -4,6 +4,10 @@ const time = document.getElementById("time"),
   names = document.getElementById("name"),
   focus = document.getElementById("focus");
 
+  // Option
+const showAMPM = true;
+  
+
 // Show Time
 function showTime() {
   // Will show the current date and time
@@ -17,12 +21,12 @@ function showTime() {
   const AM_PM = hour >= 12 ? "PM" : "AM"; //Using a Ternary Operator AKA a shorthand IF Statement | ? means IF SO | : means ELSE
 
   // Set 12hr Format
-  hour = hour % 12 || 12;
+//   hour = hour % 12 || 12;
 
   // Output Time
   time.innerHTML = `${hour}<span>:<span>${addZero(min)}<span>:<span>${addZero(
     sec
-  )}`;
+  )} ${showAMPM ? AM_PM :''}`;
 
   // Call this function every second
   // setTimeout takes in a function (e.g. a self-calling function - showTime and shows it in intervals)
@@ -70,7 +74,7 @@ function getName() {
 // Set Name
 
 
-function setName() {
+function setName(e) {
   // Make sure that keypress is on enter and tell whether it's a keypress or blur
   if (e.type === "keypress") {
     if (e.which == 13 || e.keyCode == 13) {
@@ -92,7 +96,7 @@ function getFocus() {
   }
 }
 
-function setFocus() {
+function setFocus(e) {
     // Make sure that keypress is on enter and tell whether it's a keypress or blur
     if (e.type === "keypress") {
       if (e.which == 13 || e.keyCode == 13) {
@@ -105,14 +109,15 @@ function setFocus() {
   }
 
 // Two event listeners. One for when user clicks enter, it updates. Second for when user types but clicks off, it also updates
-names.addEventListener("keypress, setName");
-names.addEventListener("blur, setName");
-focus.addEventListener("keypress, setFocus");
-focus.addEventListener("blur, setFocus");
+names.addEventListener('keypress', setName);
+names.addEventListener('blur', setName);
+focus.addEventListener('keypress', setFocus);
+focus.addEventListener('blur', setFocus);
 
 // Run
 showTime();
 setBGr();
 getName();
 getFocus();
-setName();
+// setName();
+// setFocus();
